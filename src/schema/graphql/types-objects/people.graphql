@@ -1,0 +1,12 @@
+# Informacion de las personas
+type People {
+  id: ID!
+  name: String!
+  email: String!
+  website: String
+  github: String
+  twitter: String
+  books: [String!]!
+  # Libros que ha comprado estas personas
+  booksBuy: [Book]
+}
